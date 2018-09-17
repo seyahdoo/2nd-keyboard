@@ -106,6 +106,9 @@ F23::return
 ```
 
 
+### SETTING UP STARTUP:
+
+
 
 
 
