@@ -13,8 +13,9 @@ global hBatFile
 */
 Menu Tray, Icon
 Menu Tray, Icon, C:\windows\system32\cmd.exe
-Menu Tray, Add, Close Extra Keyboard, CloseItem
-Menu Tray, Default, Close Extra Keyboard
+Menu, Tray, NoStandard 
+Menu Tray, Add, Close Intercept, CloseItem
+Menu Tray, Default, Close Intercept
 
 ;// Run program or batch file hidden
 DetectHiddenWindows On
