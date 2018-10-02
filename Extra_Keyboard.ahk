@@ -44,6 +44,16 @@ global savedEXE = "notepad++.exe" ;BEFORE the #include is apparently the only pl
 ; 
 ; 
 
+;Open Launchy with Win button
+LWin::
+Send ^#{F13}
+IfWinNotActive, ahk_class QTool
+{
+	WinWaitActive, ahk_class QTool, , 1
+	Send ^a
+	Send {Delete}
+}
+return
 
 #if (getKeyState("F23", "P"))
 F23::return
