@@ -134,9 +134,9 @@ enter::NoFunction()
 
 LShift::
 return
-z::
-x::
-c::
+z:: Run C:\Users\seyahdoo\Documents\CODE-SEGMANT\Github\MiniRoyale\MiniRoyaleServer\start-master.bat
+x:: Run C:\Users\seyahdoo\Documents\CODE-SEGMANT\Github\MiniRoyale\MiniRoyaleServer\start-slave.bat
+c:: 
 v::
 b::
 n::
