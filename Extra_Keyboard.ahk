@@ -13,9 +13,14 @@ SetNumLockState, AlwaysOn
 
 Menu Tray, Icon
 Menu, Tray, NoStandard 
+Menu Tray, Add, Edit, EditScript
 Menu Tray, Add, Reload, ReloadScript
 Menu Tray, Add, Close Extra Keyboard, CloseItem
 Menu Tray, Default, Reload
+
+EditScript(){
+	Edit
+}
 
 CloseItem(){
 	ExitApp
@@ -54,6 +59,8 @@ IfWinNotActive, ahk_class QTool
 	Send {Delete}
 }
 return
+
+
 
 #if (getKeyState("F23", "P"))
 F23::return
