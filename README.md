@@ -1,8 +1,8 @@
 # AHK
-All of my computer automation scripts, prepared to be used with launchy, written mostly in AutoHotkey and python
+All of my computer automation scripts, prepared to be used with launchy, written mostly in AutoHotkey and Python
 
 
-# how to setup
+# How To Setup
 1. Clone this repository into "C:\" directory
 2. Install Autohotkey
 3. Install Launchy
@@ -16,3 +16,13 @@ All of my computer automation scripts, prepared to be used with launchy, written
   "C:\AHK\Intercept\intercept_tray.ahk"(if you want to enable second keyboard for macros)  
 9. Open all programs you just created shorcut for
 10. Have fun
+
+
+# About Intercept
+I installed intercept to use second keyboard with this nice tutorial video that [taranVH](https://github.com/TaranVH/2nd-keyboard) maid  
+[How to use Intercept](https://www.youtube.com/watch?v=y3e_ri-vOIo)
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=y3e_ri-vOIo
+" target="_blank"><img src="http://img.youtube.com/vi/y3e_ri-vOIo/0.jpg" 
+alt="How to use Intercept" width="240" height="180" border="10" /></a>
+
