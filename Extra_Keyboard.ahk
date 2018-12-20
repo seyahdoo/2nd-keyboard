@@ -33,10 +33,10 @@ ReloadScript(){
 global savedCLASS = "ahk_class Notepad++"
 global savedEXE = "notepad++.exe" ;BEFORE the #include is apparently the only place these can go.
 
-#include C:\AHK\Functions\Almost_All_Windows_Functions.ahk
-#include C:\AHK\Functions\Firefox_Functions.ahk
+#include C:\AHK\Lib\Almost_All_Windows_Functions.ahk
+#include C:\AHK\Lib\Firefox_Functions.ahk
 #include C:\AHK\Lib\NoFunction.ahk
-#include C:\AHK\Functions\Firefox_Youtube.ahk
+#include C:\AHK\Lib\Firefox_Youtube.ahk
 
 ;____________________________________________________________________________
 ;                                                                                                                       
