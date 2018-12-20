@@ -4,8 +4,8 @@ All of my computer automation scripts, prepared to be used with launchy, written
 
 # How To Setup
 1. Clone this repository into "C:\" directory
-2. Install Autohotkey
-3. Install Launchy
+2. Install [Autohotkey](https://www.autohotkey.com/download/)
+3. Install [Launchy](https://www.launchy.net/download.php)
 4. On Launchy>Options>Catalog>Directories add "C:\AHK\LaunchyStuff" as a directory
 5. On Launchy>Options>General>User Interface>Hotkey set hotkey to "Ctrl+Win" "F13"
 6. You Might want to add or remove some plugins for Launchy at Launchy>Options>Plugins
