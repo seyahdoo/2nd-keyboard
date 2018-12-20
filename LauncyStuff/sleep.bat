@@ -1,1 +1,1 @@
-C:\AHK\OTHER\psshutdown.exe -d -t 0
+C:\AHK\Lib\psshutdown.exe -d -t 0
