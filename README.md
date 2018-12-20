@@ -1,9 +1,9 @@
-# 2nd-keyboard
-All of my computer automation scripts, prepared to be used with launchy
+# AHK
+All of my computer automation scripts, prepared to be used with launchy, written mostly in AutoHotkey and python
 
 
 # how to setup
-1. Clone this repository into "C:\AHK\" directory
+1. Clone this repository into "C:\" directory
 2. Install Launchy
 3. On Launchy>Options>Catalog>Directories add "C:\AHK\LaunchyStuff" as a directory
 4. On Launchy>Options>General>User Interface>Hotkey set hotkey to "Ctrl+Win" "F13"
