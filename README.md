@@ -3,7 +3,7 @@ All of my computer automation scripts, prepared to be used with launchy, written
 
 
 # How To Setup
-1. Clone this repository into "C:\" directory
+1. Clone this repository into "C:\\" directory
 2. Install [Autohotkey](https://www.autohotkey.com/download/)
 3. Install [Launchy](https://www.launchy.net/download.php)
 4. On Launchy>Options>Catalog>Directories add "C:\AHK\LaunchyStuff" as a directory
@@ -12,7 +12,7 @@ All of my computer automation scripts, prepared to be used with launchy, written
 7. Go to "C:\Users\<Your user name>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 8. Make shortcut for this 3 programs there >  
   "Launchy",  
-  "C\AHK\Extra_Keyboard.ahk",  
+  "C:\AHK\Extra_Keyboard.ahk",  
   "C:\AHK\Intercept\intercept_tray.ahk"(if you want to enable second keyboard for macros)  
 9. Open all programs you just created shorcut for
 10. Have fun
