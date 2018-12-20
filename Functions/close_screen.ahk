@@ -14,6 +14,6 @@ SendMessage 0x112, 0xF170, %MONITOR_OFF%,,Program Manager
 ;wait for a key to be pressed
 Input, SingleKey, L1, {LControl}{RControl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}{AppsKey}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{Capslock}{Numlock}{PrintScreen}{Pause} ;wait for a key to be pressed
 ;turn monitors on
-SendMessage 0x112, 0xF170, %MONITOR_ON%,,Program Manager ; send the monitor into on mode
+SendMessage 0x112, 0xF170, %MONITOR_ON%,,Program Manager
 
 ExitApp
