@@ -6,13 +6,13 @@ All of my computer automation scripts, prepared to be used with launchy, written
 1. Clone this repository into "C:\\" directory
 2. Install [Autohotkey](https://www.autohotkey.com/download/)
 3. Install [Launchy](https://www.launchy.net/download.php)
-4. On Launchy>Options>Catalog>Directories add "C:\AHK\Launchables" as a directory
+4. On "Launchy>Options>Catalog>Directories" add "C:\AHK\Launchables" as a directory
 5. Select "C:\AHK\Launchables" than on "File Types" add "*"(without quotation marks) as a type
 6. Tick "Include executables"
 7. Tick "Include directories"
-8. On Launchy>Options>General>User Interface>Hotkey set hotkey to "Ctrl+Win" "F13"
-9. You Might want to add or remove some plugins for Launchy at Launchy>Options>Plugins
-10. Go to "C:\Users\<Your user name>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+8. On "Launchy>Options>General>User Interface>Hotkey" set hotkey to "Ctrl+Win", "F13"
+9. You Might want to add or remove some plugins for Launchy at "Launchy>Options>Plugins"  
+10. Go to "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
 11. Make shortcut for this 3 programs there >  
   "Launchy",  
   "C:\AHK\Extra_Keyboard.ahk",  
