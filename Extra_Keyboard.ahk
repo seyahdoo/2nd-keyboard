@@ -83,7 +83,7 @@ F6::youtube_prev()
 F5::NoFunction()
 F4::NoFunction()
 F3::NoFunction()
-F2::NoFunction()
+F2::send ^{F13}
 F1::Send #d
 
 
