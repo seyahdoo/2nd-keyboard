@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 
 
-#Include C:\AHK\Lib\Tippy.ahk
+#Include C:\AHK\Library\Tippy.ahk
 
 NoFunction(){
 	

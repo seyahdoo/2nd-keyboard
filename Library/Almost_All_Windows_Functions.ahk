@@ -4,9 +4,9 @@ SetWorkingDir %A_ScriptDir%
 #SingleInstance force
 #WinActivateForce
 
-#Include C:\AHK\Lib\Anchor.ahk
-#Include C:\AHK\Lib\Acc.ahk
-#Include C:\AHK\Lib\Tippy.ahk
+#Include C:\AHK\Library\Anchor.ahk
+#Include C:\AHK\Library\Acc.ahk
+#Include C:\AHK\Library\Tippy.ahk
 
 GroupAdd, ExplorerGroup, ahk_class #32770 ;This is for all the Explorer-based "save" and "load" boxes, from any program!
 
