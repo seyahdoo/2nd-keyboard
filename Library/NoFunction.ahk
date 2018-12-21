@@ -7,7 +7,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 
 NoFunction(){
 	
-	SoundPlay, C:\AHK\Assets\Error-Beep.mp3
+	;SoundPlay, C:\AHK\Assets\Error-Beep.mp3
 	return
 
 }

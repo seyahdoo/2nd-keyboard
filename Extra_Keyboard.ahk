@@ -73,9 +73,22 @@ Else
 }
 Return
 
+F12::Send #{PrintScreen}
+F11::Volume_Up
+F10::Volume_Down
+F9::Volume_Mute
+F8::youtube_next()
+F7::youtube_play_pause()
+F6::youtube_prev()
+F5::NoFunction()
+F4::NoFunction()
+F3::NoFunction()
+F2::NoFunction()
+F1::Send #d
 
 
-
+;-------------------------
+;;SECOND KEYBOARD MACROS;;
 #if (getKeyState("F23", "P"))
 F23::return
 
@@ -187,7 +200,7 @@ right::NoFunction()
 
 return
 #if
-;END of F23 based keyboard
-;-------------------------
+;END of SECOND KEYBOARD MACROS
+;-----------------------------
 
 
