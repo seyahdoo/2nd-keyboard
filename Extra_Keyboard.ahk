@@ -82,8 +82,8 @@ F7::youtube_play_pause()
 F6::youtube_prev()
 F5::NoFunction()
 F4::NoFunction()
-F3::NoFunction()
-F2::send ^{F13}
+F3::send ^{F13}
+;F2 - rename
 F1::Send #d
 
 
