@@ -12,11 +12,16 @@ detecthiddenwindows, on
 SetNumLockState, AlwaysOn 
 
 Menu Tray, Icon
-Menu, Tray, NoStandard 
+Menu,Tray, NoStandard 
+Menu Tray, Add, WindowSpy, WindowSpy
 Menu Tray, Add, Edit, EditScript
 Menu Tray, Add, Reload, ReloadScript
 Menu Tray, Add, Close Extra Keyboard, CloseItem
 Menu Tray, Default, Reload
+
+WindowSpy(){
+	Run C:\AHK\Library\ActiveWindowInfo.ahk
+}
 
 EditScript(){
 	Edit
