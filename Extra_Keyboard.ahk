@@ -85,11 +85,11 @@ F9::Volume_Mute
 F8::youtube_next()
 F7::youtube_play_pause()
 F6::youtube_prev()
-F5::NoFunction()
-F4::NoFunction()
+;F5::NoFunction()
+;F4::NoFunction()
 F3::send ^{F13}
 ;F2 - rename
-F1::Send #d
+;F1::Send #d
 
 
 ;-------------------------
