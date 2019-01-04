@@ -37,3 +37,5 @@ FYI/~$Table_of_all_scan_codes.xlsx
 *.ppk
 Launchables/mini-pair.ppk.lnk
 *.bak
+PATH/chromedriver.exe
+Launchables/linkedin-bot.bat
