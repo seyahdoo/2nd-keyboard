@@ -5,4 +5,4 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #NoTrayIcon
 
-Run "C:\Users\seyahdoo\AppData"
+SoundSet, 0, MASTER, mute, 2
