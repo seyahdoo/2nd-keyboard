@@ -18,7 +18,8 @@ All of my computer automation scripts, prepared to be used with launchy, written
   "C:\AHK\Extra_Keyboard.ahk",  
   "C:\AHK\Intercept\intercept_tray.ahk"(if you want to enable second keyboard for macros)  
 12. Open all programs you just created shorcut for
-13. Have fun
+13. Add "C:\AHK\PATH" to windows path
+14. Have fun
 
 
 # About Intercept
