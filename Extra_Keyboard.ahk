@@ -12,6 +12,7 @@ detecthiddenwindows, on
 SetNumLockState, AlwaysOn 
 
 Menu Tray, Icon
+Menu,Tray, Icon, shell32.dll, 44
 Menu,Tray, NoStandard 
 Menu Tray, Add, WindowSpy, WindowSpy
 Menu Tray, Add, Edit, EditScript
