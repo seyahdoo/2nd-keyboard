@@ -82,6 +82,7 @@ IfWinActive, ahk_class QTool
 }
 Else
 {
+	WinMinimizeAll
 	Send ^#{F13}
 	WinWaitActive, ahk_class QTool, , 1
 	if ErrorLevel
@@ -97,7 +98,7 @@ Else
 }
 Return
 
-F12::Send #{PrintScreen}
+;F12::Send #{PrintScreen}
 F11::Volume_Up
 F10::Volume_Down
 F9::Volume_Mute
