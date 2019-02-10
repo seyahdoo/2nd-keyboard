@@ -113,6 +113,9 @@ F3::send ^{F13}
 
 AppsKey::LWin
 
+CapsLock::Send ^!{TAB}
++CapsLock::CapsLock
+
 ;-------------------------
 ;;SECOND KEYBOARD MACROS;;
 #if (getKeyState("F23", "P"))
