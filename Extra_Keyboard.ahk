@@ -111,6 +111,7 @@ F3::send ^{F13}
 ;F2 - rename
 ;F1::Send #d
 
+AppsKey::LWin
 
 ;-------------------------
 ;;SECOND KEYBOARD MACROS;;
