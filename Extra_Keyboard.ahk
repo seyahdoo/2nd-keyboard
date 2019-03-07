@@ -68,7 +68,7 @@ LWin::
 	anyKeyPressed := false
 	Input, SingleKey, L1, {LControl}{RControl}{LAlts}{RAlt}{LShift}{RShift}{RWin}{AppsKey}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Pause}
 	Send %SingleKey%
-	anyKeyPressed := trues
+	anyKeyPressed := true
 	Return
 
 
@@ -82,7 +82,6 @@ LWin Up::
 	IfWinActive, ahk_class QTool
 	{
 		Send ^a
-		Send {Delete}
 	}
 	Else
 	{
@@ -99,7 +98,6 @@ LWin Up::
 		Else
 		{
 			Send ^a
-			Send {Delete}
 		}
 	}
 	Return
