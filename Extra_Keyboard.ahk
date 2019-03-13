@@ -117,8 +117,8 @@ F3::send ^{F13}
 
 AppsKey::LWin
 
-CapsLock::Send ^!{TAB}
-+CapsLock::CapsLock
+;CapsLock::Send ^!{TAB}
+;+CapsLock::CapsLock
 
 ;-------------------------
 ;;SECOND KEYBOARD MACROS;;
