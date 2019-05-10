@@ -106,12 +106,12 @@ LWin Up::
 F11::Volume_Up
 F10::Volume_Down
 F9::Volume_Mute
-F8::youtube_next()
-F7::youtube_play_pause()
-F6::youtube_prev()
+;F8::youtube_next()
+;F7::youtube_play_pause()
+;F6::youtube_prev()
 ;F5::NoFunction()
 ;F4::NoFunction()
-F3::send ^{F13}
+;F3::send ^{F13}
 ;F2 - rename
 ;F1::Send #d
 
@@ -201,8 +201,8 @@ enter::NoFunction()
 
 LShift::
 return
-z:: Run C:\Users\seyahdoo\Documents\CODE-SEGMANT\Github\MiniRoyale\MiniRoyaleServer\start-master.bat
-x:: Run C:\Users\seyahdoo\Documents\CODE-SEGMANT\Github\MiniRoyale\MiniRoyaleServer\start-slave.bat
+z::
+x::
 c:: 
 v::
 b::

@@ -731,13 +731,11 @@ ExplorerViewChange_ICONS(explorerHwnd)
 
 MuteMic(){
 	SoundSet, 1, MASTER, mute, 2
-	Tippy("Muted")
 	return
 }
 
 UnmuteMic(){
 	SoundSet, 0, MASTER, mute, 2
-	Tippy("Unmuted")
 	return
 }
 
