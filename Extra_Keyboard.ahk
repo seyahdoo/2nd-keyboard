@@ -55,30 +55,8 @@ global savedEXE = "notepad++.exe" ;BEFORE the #include is apparently the only pl
 ; 
 ; 
 
-;Open Launchy with Win button
-+LWin::
-	Send {Shift Up}{LWin}
-	Return
-
-LWin::
-	Send {LWin Down}
-	;Send ^!{TAB}
-	
-	;to be able to use Win+Tab, Win+V
-	anyKeyPressed := false
-	Input, SingleKey, L1, {LControl}{RControl}{LAlts}{RAlt}{LShift}{RShift}{RWin}{AppsKey}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Pause}
-	Send %SingleKey%
-	anyKeyPressed := true
-	Return
-
-
-LWin Up::
-	Send {F13 Down}{LWin Up}{F13 Up}
-	;if Win+Tab or sth used, dont open launchy
-	if(anyKeyPressed){
-		Return
-	}
-
+;Open Launchy with AltGr button
+LControl & RAlt::
 	IfWinActive, ahk_class QTool
 	{
 		Send ^a
@@ -101,6 +79,7 @@ LWin Up::
 		}
 	}
 	Return
+
 
 ;F12::Send #{PrintScreen}
 F11::Volume_Up
