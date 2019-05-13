@@ -55,8 +55,8 @@ global savedEXE = "notepad++.exe" ;BEFORE the #include is apparently the only pl
 ; 
 ; 
 
-;Open Launchy with AltGr button
-LControl & RAlt::
+;Open Launchy with AppsKey button -> will be swapped with Windows key via intercept.exe
+AppsKey::
 	IfWinActive, ahk_class QTool
 	{
 		Send ^a
