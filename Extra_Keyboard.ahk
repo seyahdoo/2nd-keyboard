@@ -11,13 +11,6 @@ SendMode Input
 detecthiddenwindows, on
 SetNumLockState, AlwaysOn
 
-#include C:\AHK\Library\Almost_All_Windows_Functions.ahk
-#include C:\AHK\Library\Firefox_Functions.ahk
-#include C:\AHK\Library\NoFunction.ahk
-#include C:\AHK\Library\Firefox_Youtube.ahk
-#include C:\AHK\Library\Keyboard_Led_Controll.ahk
-
-
 ;-------------------------
 ;;TRAY CODE;;
 
@@ -48,6 +41,13 @@ ReloadScript(){
 
 ;END of TRAY CODE
 ;-----------------------------
+
+
+#include C:\AHK\Library\Almost_All_Windows_Functions.ahk
+#include C:\AHK\Library\Firefox_Functions.ahk
+#include C:\AHK\Library\NoFunction.ahk
+#include C:\AHK\Library\Firefox_Youtube.ahk
+#include C:\AHK\Library\Keyboard_Led_Controll.ahk
 
 
 ;-------------------------
@@ -124,8 +124,6 @@ NumpadEnter::
 
 ;END of NUM KEYBOARD MACROS
 ;-----------------------------
-
-
 
 
 ;-------------------------
