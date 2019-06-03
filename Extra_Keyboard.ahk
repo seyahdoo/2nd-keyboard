@@ -95,14 +95,42 @@ NumpadMult::
 ;Backspace::
 
 
-Numpad7:: youtube_next()
-Numpad8:: youtube_next()
-Numpad9:: youtube_next()
+Numpad7:: Send {Volume_Down}
+Numpad8:: Send {Volume_Mute}
+Numpad9:: Send {Volume_Up}
 NumpadSub::
 
-Numpad4:: youtube_prev()
-Numpad5:: youtube_play_pause()
-Numpad6:: youtube_next()
+Numpad4:: 
+	IfWinExist, ahk_exe mpc-hc64.exe
+	{
+		Send {Media_Prev}
+		Return
+	} Else {
+		youtube_prev()
+		Return
+	}
+	
+Numpad5:: 
+	IfWinExist, ahk_exe mpc-hc64.exe
+	{
+		Send {Media_Play_Pause}
+		Return
+	} Else {
+		youtube_play_pause()
+		Return
+	}
+	
+Numpad6:: 
+	IfWinExist, ahk_exe mpc-hc64.exe
+	{
+		Send {Media_Next}
+		Return
+	} Else {
+		youtube_next()
+		Return
+	}
+
+
 NumpadAdd::
 
 Numpad1:: Tippy("Num1")
