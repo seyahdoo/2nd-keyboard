@@ -9,7 +9,17 @@ SendMode Input
 #MaxHotkeysPerInterval 2000
 #WinActivateForce
 detecthiddenwindows, on
-SetNumLockState, AlwaysOn 
+SetNumLockState, AlwaysOn
+
+#include C:\AHK\Library\Almost_All_Windows_Functions.ahk
+#include C:\AHK\Library\Firefox_Functions.ahk
+#include C:\AHK\Library\NoFunction.ahk
+#include C:\AHK\Library\Firefox_Youtube.ahk
+#include C:\AHK\Library\Keyboard_Led_Controll.ahk
+
+
+;-------------------------
+;;TRAY CODE;;
 
 Menu Tray, Icon
 Menu,Tray, Icon, shell32.dll, 44
@@ -36,38 +46,22 @@ ReloadScript(){
 	Reload
 }
 
-global savedCLASS = "ahk_class Notepad++"
-global savedEXE = "notepad++.exe" ;BEFORE the #include is apparently the only place these can go.
+;END of TRAY CODE
+;-----------------------------
 
-#include C:\AHK\Library\Almost_All_Windows_Functions.ahk
-#include C:\AHK\Library\Firefox_Functions.ahk
-#include C:\AHK\Library\NoFunction.ahk
-#include C:\AHK\Library\Firefox_Youtube.ahk
 
-;____________________________________________________________________________
-;                                                                                                                       
-; NOTE: In autohotkey, the following special characters (usually) represent modifier keys:
-; # is the WIN key. (it can mean other things though, as you can see above.)
-; ^ is CTRL
-; ! is ALT
-; + is SHIFT
-; list of other keys: http://www.autohotkey.com/docs/Hotkeys.htm
-; 
-; 
-
+;-------------------------
+;;WIN KEY MACRO;;
 ;Open Launchy with AppsKey button -> will be swapped with Windows key via intercept.exe
 AppsKey::
-	IfWinActive, ahk_class QTool
+	IfWinActive, ahk_exe Wox.exe
 	{
 		Send ^a
 	}
 	Else
 	{
-		;WinActivateBottom, ahk_class DockCatcher
-		;WinActivateBottom, ahk_class DockCatcher
-		;WinMinimizeAll
-		Send ^#{F13}
-		WinWaitActive, ahk_class QTool, , 1
+		Send {F13}
+		WinWait, ahk_exe Wox.exe, , 1
 		if ErrorLevel
 		{
 			SoundBeep
@@ -75,140 +69,73 @@ AppsKey::
 		}
 		Else
 		{
-			Send ^a
+			;WinActivate, ahk_exe Wox.exe, , 1
+			;Send ^a
 		}
+
 	}
 	Return
 
+;END of KEY MACRO
+;-----------------------------
 
-;F12::Send #{PrintScreen}
-F11::Volume_Up
-F10::Volume_Down
-F9::Volume_Mute
-;F8::youtube_next()
-;F7::youtube_play_pause()
-;F6::youtube_prev()
-;F5::NoFunction()
-;F4::NoFunction()
-;F3::send ^{F13}
-;F2 - rename
-;F1::Send #d
 
-AppsKey::LWin
+;-------------------------
+;;NUM KEYBOARD MACROS;;
 
-;CapsLock::Send ^!{TAB}
-;+CapsLock::CapsLock
+Browser_Home::
+;Tab::
+Launch_Mail::
+Launch_App2::
+
+
+NumLock::
+NumpadDiv::
+NumpadMult::
+;Backspace::
+
+
+Numpad7:: youtube_next()
+Numpad8:: youtube_next()
+Numpad9:: youtube_next()
+NumpadSub::
+
+Numpad4:: youtube_prev()
+Numpad5:: youtube_play_pause()
+Numpad6:: youtube_next()
+NumpadAdd::
+
+Numpad1:: Tippy("Num1")
+
+Numpad2:: 
+	UnmuteMic()
+	KeyboardLED(2, "off", 4)
+	Return
+
+Numpad3:: 
+	MuteMic()
+	KeyboardLED(2, "on", 4)
+	Return
+
+Numpad0:: ReloadScript()
+;Space::
+NumpadDot::
+NumpadEnter::
+
+;END of NUM KEYBOARD MACROS
+;-----------------------------
+
+
+
 
 ;-------------------------
 ;;SECOND KEYBOARD MACROS;;
 #if (getKeyState("F23", "P"))
 F23::return
 
-;;;;;first row;;;;;
-
-ESC::
-F1::Return
 F2::Send {Volume_Down}
 F3::Send {Volume_Up}
 F4::Send {Volume_Mute}
-F5::youtube_prev()
-F6::youtube_next()
-F7::youtube_play_pause()
-F9::
-F8::
-F10::
-F11::
-F12::NoFunction()
-
-PrintScreen::
-NumLock::
-return
-insert::
-delete::
-
-;;;;;next row;;;;;
-
-sc029::
-1::
-2::
-3::
-4::return
-5::youtube_volume_down()
-6::youtube_volume_up()
-7::return
-8::
-9::
-0::
-*::
--::
-backspace::NoFunction()
-
-;;;;;next row;;;;;
-
-tab::NoFunction()
-q::switchToFirefox()
-w::switchToExplorer()
-e::
-r::
-t::Run "C:\AHK\Functions\TinderBOT\tinderbot_tray.ahk"
-y::
-u::
-ı::
-o::
-p::
-ğ::
-ü::
-\::NoFunction()
-
-;;;;;next row;;;;;
-
-capslock::
-a::
-s::
-d::return
-f::youtube_fullscreen()
-g::return
-h::
-j::
-k::
-l::
-sc027::
-sc028::
-enter::NoFunction()
-
-;;;;;next row;;;;;
-
-LShift::
-return
-z::
-x::
-c:: 
-v::
-b::
-n::
-NoFunction()
-return
-
-m::MuteMic()
-ö::UnmuteMic()
-ç::Tippy("Hello")
-sc035::
-SC061::NoFunction()
-
-;;;;;next row;;;;;
-
-LCtrl::
-sc063::
-Lalt::ReloadScript()
-space::youtube_play_pause()
-sc05A::
-sc062::
-Rctrl::
-
-up::
-down::
-left::
-right::NoFunction()
 
 return
 #if
