@@ -98,7 +98,7 @@ NumpadMult::
 Numpad7:: Send {Volume_Down}
 Numpad8:: Send {Volume_Mute}
 Numpad9:: Send {Volume_Up}
-NumpadSub::
+NumpadSub:: Send {Volume_Down}
 
 Numpad4:: 
 	IfWinExist, ahk_exe mpc-hc64.exe
@@ -131,19 +131,20 @@ Numpad6::
 	}
 
 
-NumpadAdd::
+NumpadAdd:: Send {Volume_Up}
 
-Numpad1:: Tippy("Num1")
+Numpad1:: Send {F22}
 
-Numpad2:: 
-	UnmuteMic()
-	KeyboardLED(2, "off", 4)
-	Return
+Numpad2:: Send {F23}
 
-Numpad3:: 
-	MuteMic()
-	KeyboardLED(2, "on", 4)
-	Return
+	;UnmuteMic()
+	;KeyboardLED(2, "off", 4)
+	;Return
+
+Numpad3:: Send {F24}
+	;MuteMic()
+	;KeyboardLED(2, "on", 4)
+	;Return
 
 Numpad0:: ReloadScript()
 ;Space::
