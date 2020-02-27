@@ -26,6 +26,8 @@ All of my computer automation scripts, prepared to be used with launchy, written
 I installed intercept to use second keyboard with this nice tutorial video that [taranVH](https://github.com/TaranVH/2nd-keyboard) maid  
 [How to use Intercept](https://www.youtube.com/watch?v=y3e_ri-vOIo)
 
+you have to install [Microsoft Visual C++ 2010 Redistributable Package (x86)](https://www.microsoft.com/en-us/download/details.aspx?id=5555) to use intercept
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=y3e_ri-vOIo
 " target="_blank"><img src="http://img.youtube.com/vi/y3e_ri-vOIo/0.jpg" 
 alt="How to use Intercept" width="240" height="180" border="10" /></a>
