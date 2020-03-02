@@ -28,7 +28,7 @@ I installed intercept to use second keyboard with this nice tutorial video that 
 
 you have to install [Microsoft Visual C++ 2010 Redistributable Package (x86)](https://www.microsoft.com/en-us/download/details.aspx?id=5555) to use intercept
 
-download (this)[https://github.com/oblitum/interception/releases/tag/v1.0.1] and use command line installer
+download [this](https://github.com/oblitum/interception/releases/tag/v1.0.1) and use command line installer
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=y3e_ri-vOIo
 " target="_blank"><img src="http://img.youtube.com/vi/y3e_ri-vOIo/0.jpg" 
