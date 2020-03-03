@@ -52,7 +52,7 @@ ReloadScript(){
 
 ;-------------------------
 ;;WIN KEY MACRO;;
-;Open Launchy with AppsKey button -> will be swapped with Windows key via intercept.exe
+;Open Wox with AppsKey button -> will be swapped with Windows key via intercept.exe
 AppsKey::
 	IfWinActive, ahk_exe Wox.exe
 	{
@@ -77,96 +77,6 @@ AppsKey::
 	Return
 
 ;END of KEY MACRO
-;-----------------------------
-
-
-;-------------------------
-;;NUM KEYBOARD MACROS;;
-
-Browser_Home::
-;Tab::
-Launch_Mail::
-Launch_App2::
-
-
-NumLock::
-NumpadDiv::
-NumpadMult::
-;Backspace::
-
-
-Numpad7:: Send {Volume_Down}
-Numpad8:: Send {Volume_Mute}
-Numpad9:: Send {Volume_Up}
-NumpadSub:: Send {Volume_Down}
-
-Numpad4:: 
-	IfWinExist, ahk_exe mpc-hc64.exe
-	{
-		Send {Media_Prev}
-		Return
-	} Else {
-		youtube_prev()
-		Return
-	}
-	
-Numpad5:: 
-	IfWinExist, ahk_exe mpc-hc64.exe
-	{
-		Send {Media_Play_Pause}
-		Return
-	} Else {
-		youtube_play_pause()
-		Return
-	}
-	
-Numpad6:: 
-	IfWinExist, ahk_exe mpc-hc64.exe
-	{
-		Send {Media_Next}
-		Return
-	} Else {
-		youtube_next()
-		Return
-	}
-
-
-NumpadAdd:: Send {Volume_Up}
-
-Numpad1:: Send {F22}
-
-Numpad2:: Send {F23}
-
-	;UnmuteMic()
-	;KeyboardLED(2, "off", 4)
-	;Return
-
-Numpad3:: Send {F24}
-	;MuteMic()
-	;KeyboardLED(2, "on", 4)
-	;Return
-
-Numpad0:: ReloadScript()
-;Space::
-NumpadDot::
-NumpadEnter::
-
-;END of NUM KEYBOARD MACROS
-;-----------------------------
-
-
-;-------------------------
-;;SECOND KEYBOARD MACROS;;
-#if (getKeyState("F23", "P"))
-F23::return
-
-F2::Send {Volume_Down}
-F3::Send {Volume_Up}
-F4::Send {Volume_Mute}
-
-return
-#if
-;END of SECOND KEYBOARD MACROS
 ;-----------------------------
 
 
