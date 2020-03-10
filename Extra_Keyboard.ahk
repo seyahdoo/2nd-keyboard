@@ -18,6 +18,7 @@ Menu Tray, Icon
 Menu,Tray, Icon, shell32.dll, 44
 Menu,Tray, NoStandard 
 Menu Tray, Add, Open Start Menu, OpenStartMenu
+Menu Tray, Add, Open On Screen Keyboard, OpenOnScreenKeyboard
 Menu Tray, Add, WindowSpy, WindowSpy
 Menu Tray, Add, Edit, EditScript
 Menu Tray, Add, Reload, ReloadScript
@@ -30,6 +31,10 @@ WindowSpy(){
 
 OpenStartMenu(){
 	Send ^{Esc}
+}
+
+OpenOnScreenKeyboard(){
+	Run, osk.exe
 }
 
 EditScript(){
