@@ -1,19 +1,10 @@
 import subprocess
 import os
 from typing import List
+import colorama
+from colorama import Fore, Back, Style
 
 nothing_to_commit_msg = "nothing to commit, working tree clean"
-
-
-class ConsoleColors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
 
 
 def strip(l):
@@ -26,7 +17,7 @@ def run(cmd: List[str]) -> str:
     for i in cmd:
         command_string += i
         command_string += " "
-    print(f"{ConsoleColors.WARNING}{command_string}{ConsoleColors.ENDC}")
+    print(f"{Fore.YELLOW}{command_string}{Style.RESET_ALL}")
     result_str: str = subprocess.run(cmd, stdout=subprocess.PIPE).stdout.decode('utf-8')
     print(result_str)
     return result_str
@@ -75,10 +66,16 @@ def smart_pull_repo(repo_path: str):
 
 
 def main():
-    path = os.getcwd()
+    colorama.init()
+    path = os.path.dirname(os.path.abspath(__file__))
+    print(path)
     for repo in os.listdir(path):
         repo_path = os.path.join(path, repo)
-        smart_pull_repo(repo_path)
+        if os.path.isdir(repo_path):
+            smart_pull_repo(repo_path)
+
+    print(f"{Fore.YELLOW}\n\nDONE! PRESS ENTER TO EXIT!\n{Style.RESET_ALL}")
+    input()
     return
 
 
