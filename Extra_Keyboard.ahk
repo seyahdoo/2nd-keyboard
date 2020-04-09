@@ -93,3 +93,7 @@ AppsKey::
 ;END of KEY MACRO
 ;-----------------------------
 
+
+#IfWinActive ahk_exe Bannerlord.exe
+!F4::Return
+#IfWinActive
