@@ -97,3 +97,14 @@ AppsKey::
 #IfWinActive ahk_exe Bannerlord.exe
 !F4::Return
 #IfWinActive
+
+#IfWinActive DRAGON BALL FighterZ
+Space::W
+p::y
+ş::h
+#IfWinActive
+
+#IfWinActive StreetFighterV
+Space::w
+ş::.
+#IfWinActive
