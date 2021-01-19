@@ -93,6 +93,18 @@ AppsKey::
 ;END of KEY MACRO
 ;-----------------------------
 
+;Use Turkish Characters On International Keyboard
+!^s::ş
+!^+s::Ş
+!^o::ö
+!^+o::Ö
+!^u::ü
+!^+u::Ü
+!^c::ç
+!^+c::Ç
+!^i::ı
+!^+i::İ
+
 
 #IfWinActive ahk_exe Bannerlord.exe
 !F4::Return
