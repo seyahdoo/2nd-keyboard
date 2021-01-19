@@ -110,13 +110,13 @@ AppsKey::
 !F4::Return
 #IfWinActive
 
-#IfWinActive DRAGON BALL FighterZ
-Space::W
-p::y
-ş::h
-#IfWinActive
+;#IfWinActive DRAGON BALL FighterZ
+;Space::W
+;p::y
+;ş::h
+;#IfWinActive
 
-#IfWinActive StreetFighterV
-Space::w
-ş::.
-#IfWinActive
+;#IfWinActive StreetFighterV
+;Space::w
+;ş::.
+;#IfWinActive
