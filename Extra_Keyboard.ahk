@@ -104,7 +104,8 @@ AppsKey::
 !^+c::Ç
 !^i::ı
 !^+i::İ
-
+!^g::ğ
+!^+g::Ğ
 
 #IfWinActive ahk_exe Bannerlord.exe
 !F4::Return
