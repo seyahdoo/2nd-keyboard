@@ -1,5 +1,5 @@
 # AHK
-All of my computer automation scripts, prepared to be used with launchy, written mostly in AutoHotkey and Python
+All of my computer automation scripts, prepared to be used with wox, written mostly in AutoHotkey and Python
 
 
 # How To Setup
