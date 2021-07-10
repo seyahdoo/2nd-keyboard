@@ -94,9 +94,9 @@ AppsKey::
 ;-----------------------------
 
 ;Extra Programming Symbols On Function Keys
-F10::*
-F11::?
-F12::+
+;F10::*
+;F11::?
+;F12::+
 
 #IfWinActive ahk_exe Bannerlord.exe
 !F4::Return
